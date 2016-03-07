@@ -1,0 +1,62 @@
+#content {margin-bottom:3em;}
+figure.alignright, img.alignright, blockquote.alignright {margin:7px 0 7px 24px;float:right;}
+figure.alignleft, img.alignleft, blockquote.alignleft {margin:7px 24px 7px 0;float:left;}
+
+.blog .post {border-bottom:1px solid $lightest-gray;padding-bottom:2em;margin-bottom:2.5em;
+	&:last-child {border-bottom:none;}
+	.entry-content p, a.read-more  {display:inline;}
+}
+.pagination {
+	border-top:1px solid $lightest-gray;border-bottom:1px solid $lightest-gray; padding:1em 0 3em;margin:3em 0 0;
+}
+.home .lightest-teal-bg {padding:3em 0;margin-top:3em;}
+#faces {//background:#fff url(../img/people.png) repeat;
+	background:#fff url(../img/people-bg2.jpg) repeat;
+	padding:7em 0 7em;
+	.button {margin:1.2em 0.5em 2.7em;}
+}
+.post-excerpt {padding-bottom:2.5em;border-bottom:1px solid $lightest-gray;margin-bottom:3em;
+	&:last-child {border-bottom:none;padding-bottom:1em;}
+}
+.team-members .member:nth-child(odd) {clear:left;}
+.team-members .member {margin-bottom:2.6em;
+	.email-member {font-size:14px;color:#a3a3a3;
+		&:hover {color:$teal;}
+		&:before {content: url(../img/email.png) no-repeat left;margin-right:5px;}
+	}
+}
+.stripes {margin-bottom:1.5em;
+	.line {padding:0.3em 1em;background:rgba(40,117,185,0.11);
+		&:nth-child(odd) {background:rgba(96,185,193,0.08);}
+		a {color:#F99238;}
+	}
+}
+.meta.terms {margin-bottom:3em;
+	a {background:$light-teal;color:#fff;padding:5px 8px;margin-right:5px;}
+}
+.single-testimonial {
+	img.attachment-testimonial {border-radius:50%;border:8px solid #fff;
+			-webkit-box-shadow:0px 2px 5px 2px #C5C5C5;
+			box-shadow:0px 2px 5px 2px #C5C5C5;position:relative;}
+}
+.iframe-contain {
+	clear:both;
+	display:block;
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+	iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100% !important;
+	    height: 100% !important;
+	}
+}
+@media only screen and (min-width: 40.0625em) {
+	#content {margin-bottom:0;}
+	.widget .post-excerpt {padding-bottom:0;border-bottom:none;margin-bottom:1em;}
+	.team-members .member:nth-child(odd) {clear:none;}
+	.team-members .member:nth-child(3n+1) {clear:left;}
+}

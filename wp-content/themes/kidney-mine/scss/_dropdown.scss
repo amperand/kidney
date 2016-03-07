@@ -1,0 +1,87 @@
+// smaller than foundation medium
+// do this for 0px up to medium max width
+//@media screen and (max-width: 40.0625em) and (max-width:899px){
+@media screen and (min-width:0px) and (max-width: 40.0625em){
+	body {background:pink;}
+	.widgetized-menu-button .menu-item-list .menu-item-title {display:none;}
+}
+@media screen and (min-width:40.0625em) and (max-width:899px){
+	body {background:aqua;}
+	.widgetized-menu-button {
+	 	display:none;
+	}
+	nav.widgetized-nav, nav.widgetized-nav.navWidth-navBar {display:inline-block !important;width:auto !important;}
+	.widgetized-mobile-nav-parent {
+		position:relative!important;
+		width:75%!important;
+		margin-left:0!important;
+		margin-right:0!important;
+		padding-left:0.9375em!important;
+		padding-right:0.9375em!important;
+  	}
+  	nav.widgetized-nav {
+	  	.main-nav {
+	
+			> li {
+		  		width:auto !important;border-bottom:none;display:inline;position:static !important;
+		  	
+		  		&:first-child {border-top:none;
+			  		a {padding-left:0;}
+		  		}
+		  		&:last-child {border-bottom:none;}
+		  		
+		  		a {font-size:86%}
+		  		
+		  		&.hasChildren {padding-right:10px;
+			  		a {padding:10px 7px 10px 10px;}
+		  		}
+	  		}
+	  		.sub-menu {
+		  		position:absolute !important;
+	  		}
+	  	}
+	  	.menu-item-arrow {display:inline;background:transparent;position:relative;top:-4px;}
+  	}
+  	.icowdgt-chevron-arrow-down:before {
+		content: '';
+	    position:relative;
+	    right:0px;
+	    top:0px;
+	    width: 0;
+	    height: 0;
+	    border-left:5px solid transparent;
+	    border-right:5px solid transparent;
+	    border-top: 5px solid $wcpc-color;
+	    border-bottom:5px solid transparent;
+	    clear: both;
+	}
+  
+}
+@media screen and (min-width:900px) {
+	nav.widgetized-nav {
+		.main-nav > li {
+			&.hasChildren {margin-right:1em;
+				a {padding:8px 23px 8px 14px;}
+			}
+		}
+		.menu-item-arrow {position:relative;top:-21px;float:right;display:block;}
+		.icowdgt-chevron-arrow-down:before {
+			content: '';
+		    position:relative;
+		    right:0px;
+		    top:0px;
+		    width: 0;
+		    height: 0;
+		    border-left:5px solid transparent;
+		    border-right:5px solid transparent;
+		    border-top: 5px solid $wcpc-color;
+		    border-bottom:5px solid transparent;
+		    clear: both;
+		}
+	}
+}
+.widgetized-nav {
+	font-family:$pt-sans;font-weight:bold;text-transform:uppercase;
+	
+	a {color:$wcpc-color;}
+}

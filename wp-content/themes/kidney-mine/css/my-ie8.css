@@ -1,0 +1,4 @@
+.ie9 .loading, .ie8 .loading {background:#fff;background-image:none;}
+.ie8 .flexslider > .slides {max-height:350px;overflow:hidden;}
+.ie8 .flexslider > .slides > li {display:block;}
+.ie8 .problem-slider.flexslider > .slides > li {display:inline-block;}
